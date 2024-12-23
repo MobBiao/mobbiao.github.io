@@ -36,16 +36,16 @@ jobs:
             - name: Setup Hugo
               uses: peaceiris/actions-hugo@v2
               with:
-                  hugo-version: "latest"
+                  hugo-version: "v0.139.4"
                   extended: true
 
-            - name: Build
-              run: hugo --minify --gc
+            - name: Build Hugo
+              run: hugo
 
             - name: Deploy 🚀
               uses: JamesIves/github-pages-deploy-action@v4
               with:
-                  branch: gh-pages
+                  branch: master
                   folder: public
                   clean: true
                   single-commit: true

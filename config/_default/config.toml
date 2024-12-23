@@ -1,4 +1,4 @@
-baseurl = "https://mobbiao.github.io/MyBlog"
+baseurl = "https://mobbiao.github.io/MyBlog/"
 languageCode = "zh-Hans"
 paginate = 5
 title = "Biao的博客"
