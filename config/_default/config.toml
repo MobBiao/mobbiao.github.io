@@ -1,0 +1,11 @@
+baseurl = "https://mobbiao.github.io"
+languageCode = "zh-Hans"
+paginate = 5
+title = "MobBiao的博客"
+
+DefaultContentLanguage = "zh-cn"
+
+hasCJKLanguage = false
+
+# Change it to your Disqus shortname before using
+disqusShortname = "mobbiao.github.io"
