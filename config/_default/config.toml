@@ -1,6 +1,7 @@
 baseurl = "https://mobbiao.github.io"
 languageCode = "zh-Hans"
-pagination = 5
+[pagination]
+pagerSize = 5
 title = "MobBiao的博客"
 
 DefaultContentLanguage = "zh-cn"
