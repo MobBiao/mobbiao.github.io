@@ -7,7 +7,7 @@ image: cover.jpg
 categories:
     - "阅读"
 tags:
-    - Example Tag
+    - markdown
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
