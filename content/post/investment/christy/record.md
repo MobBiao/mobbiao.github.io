@@ -3,7 +3,7 @@ title: Christy 记录
 date: 2025-12-08
 description: 
 tags: 
-    - Christy88
+    - Christy
 categories:
     - "投资"
 ---
