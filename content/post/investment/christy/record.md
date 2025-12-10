@@ -1,5 +1,5 @@
 ---
-title: Christy88 记录
+title: Christy 记录
 date: 2025-12-08
 description: 
 tags: 
