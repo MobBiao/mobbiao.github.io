@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术 on</title><link>https://mobbiao.github.io/categories/%E6%8A%80%E6%9C%AF/</link><description>Recent content in 技术 on</description><generator>Hugo -- gohugo.io</generator><language>zh-Hans</language><lastBuildDate>Sun, 25 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://mobbiao.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>llmappl 记录</title><link>https://mobbiao.github.io/p/llmappl-%E8%AE%B0%E5%BD%95/</link><pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate><guid>https://mobbiao.github.io/p/llmappl-%E8%AE%B0%E5%BD%95/</guid><description>&lt;h4 id="0125-学习路线"&gt;01/25 学习路线
+&lt;/h4&gt;&lt;p&gt;❌ 阶段1：深度学习基础（可跳）
+原因：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Agent 开发 不要求你会反向传播 / CNN / Transformer 推导&lt;/li&gt;
+&lt;li&gt;会“怎么用模型”比“模型怎么训练出来”重要&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉 建议替代方案：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;了解即可：Transformer 是什么 + Attention 在干嘛&lt;/li&gt;
+&lt;li&gt;不要陷入 PyTorch 细节&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🟡 阶段2：大模型技术总览（必须快速看）
+需要知道：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LLM ≠ ChatGPT&lt;/li&gt;
+&lt;li&gt;Inference / Token / Context Window / KV Cache 是什么&lt;/li&gt;
+&lt;li&gt;为什么 Agent 会慢 / 会幻觉
+👉 不求细节，只求架构感&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🟡 阶段3：大模型部署实战（偏工程，推荐）
+强烈建议学，原因：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AI Agent = 后端服务 + LLM 推理&lt;/li&gt;
+&lt;li&gt;不懂部署 → Agent 只能跑在 notebook 里
+重点掌握：&lt;/li&gt;
+&lt;li&gt;vLLM / llama.cpp / Ollama&lt;/li&gt;
+&lt;li&gt;GPU / CPU 推理差异&lt;/li&gt;
+&lt;li&gt;API 封装&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;✅ 阶段4：Prompt 提示工程（必学）
+这是 Agent 的“编程语言”。
+你必须会：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;System / User / Tool Prompt 设计&lt;/li&gt;
+&lt;li&gt;Chain of Thought / ReAct&lt;/li&gt;
+&lt;li&gt;JSON / Schema 输出&lt;/li&gt;
+&lt;li&gt;多轮状态控制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Prompt 能力 ≈ Agent 开发能力的一半&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;✅ 阶段5：RAG + Agent（核心）
+这是你从“会用 LLM” → “能做系统”的分水岭。
+你要重点掌握：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;向量数据库（FAISS / Milvus）&lt;/li&gt;
+&lt;li&gt;Chunk / Embedding 策略&lt;/li&gt;
+&lt;li&gt;Tool Calling&lt;/li&gt;
+&lt;li&gt;Agent 调度逻辑
+👉 这是企业最常用的 LLM 形态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🟡 阶段6：垂域微调（选学）
+什么时候有用？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RAG 不够&lt;/li&gt;
+&lt;li&gt;Prompt 控制不住输出风格&lt;/li&gt;
+&lt;li&gt;企业私有知识强&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;只学：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LoRA / QLoRA&lt;/li&gt;
+&lt;li&gt;不碰全量训练&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;❌ 阶段7 &amp;amp; 8：预训练 + 分布式训练（可跳）
+这是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;算法工程师&lt;/li&gt;
+&lt;li&gt;大厂模型团队&lt;/li&gt;
+&lt;li&gt;Infra / CUDA 方向
+👉 与你的目标几乎不重合&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🟡 阶段9：产品级推理优化（建议）
+非常加分的一阶段：
+你会懂：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;延迟 / 吞吐 / 成本权衡&lt;/li&gt;
+&lt;li&gt;KV Cache / Batch&lt;/li&gt;
+&lt;li&gt;多 Agent 并发&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;✅ 阶段10：推理引擎部署（必学）
+这是工程落地能力的体现。
+你要会：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;单机 / 多卡&lt;/li&gt;
+&lt;li&gt;API 限流&lt;/li&gt;
+&lt;li&gt;与后端系统集成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;❌ 阶段11：多模态（按需）
+如果你做：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OCR Agent&lt;/li&gt;
+&lt;li&gt;语音 Agent&lt;/li&gt;
+&lt;li&gt;图像分析 Agent
+👉 才学
+否则可跳&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;✅ 阶段12：综合项目实战（必学）
+这是你简历最重要的一部分。
+项目目标应是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“一个能完成真实任务的 Agent 系统”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;✅ 阶段13：Agent + MCP 工业系统（强烈推荐）
+这是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;多 Agent 协作&lt;/li&gt;
+&lt;li&gt;状态机&lt;/li&gt;
+&lt;li&gt;工具链&lt;/li&gt;
+&lt;li&gt;长任务分解
+👉 这一步你已经是 Agent 工程师了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🟡 阶段14：面试专项（最后学）&lt;/p&gt;</description></item></channel></rss>
