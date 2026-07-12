@@ -1,5 +1,5 @@
 ---
-title: ErChi 记录
+title: mimi 记录
 date: 2026-06-11
 description: 
 tags: 
